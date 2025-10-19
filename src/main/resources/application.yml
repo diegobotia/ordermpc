@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /api/v3/openapi.json
+#  swagger-ui:
+#    path: /swagger-ui.html
+#    url: /api/v3/openapi.json
+logging:
+  level:
+    org.springdoc: DEBUG
