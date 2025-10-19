@@ -8,6 +8,6 @@ RUN mvn clean package -DskipTests  # Compila el JAR, salta tests para velocidad
 FROM eclipse-temurin:17-jre
 VOLUME /tmp
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar  
+COPY --from=build /app/target/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
-EXPOSE 8080  # Puerto de tu app Spring Boot
+EXPOSE 8080
